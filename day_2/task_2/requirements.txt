@@ -1,0 +1,9 @@
+# requirements.txt
+streamlit
+google-generativeai
+python-dotenv
+PyPDF2
+python-docx
+faiss-cpu
+sentence-transformers
+numpy
