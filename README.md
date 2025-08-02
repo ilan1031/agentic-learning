@@ -40,3 +40,46 @@ Build an AI-powered tool that summarizes legal cases in a structured, context-aw
 
 ```bash
 pip install -U google-generativeai tiktoken
+---
+
+
+# 📁 Day 2 - Task 2: HR Policy AI Chatbot (PDF-based)
+
+This task implements an AI-powered HR chatbot using **Google Gemini 1.5 Flash**, capable of answering queries based only on uploaded **PDF HR documents**. It uses **FAISS** for vector retrieval and a **Streamlit UI**.
+
+---
+
+## ✅ Features
+
+- Upload HR policy documents (PDF only)
+- Extracts and chunks content
+- Embeds using `all-MiniLM-L6-v2`
+- Stores vectors in FAISS
+- Retrieves top-k relevant sections
+- Gemini 1.5 answers with context
+- Displays source for every answer
+
+---
+
+## 🔧 How to Run
+
+1. Install dependencies  
+   `pip install -r requirements.txt`
+
+2. Add your Gemini key in `.env`  
+   `GOOGLE_API_KEY=your_api_key`
+
+3. Launch app  
+   `streamlit run app.py`
+
+---
+
+## 🧪 Test Questions
+
+- What is the maternity leave policy?
+- How many sick leaves are allowed?
+- What is the notice period?
+
+---
+
+
