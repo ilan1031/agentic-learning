@@ -40,8 +40,7 @@ Build an AI-powered tool that summarizes legal cases in a structured, context-aw
 
 ```bash
 pip install -U google-generativeai tiktoken
-
----
+...
 
 ---
 # 📁 Day 2 - Task 2: HR Policy AI Chatbot (PDF-based)
