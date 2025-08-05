@@ -1,0 +1,8 @@
+streamlit
+langchain
+google-generativeai
+bs4
+requests
+fpdf
+pymongo
+python-dotenv
