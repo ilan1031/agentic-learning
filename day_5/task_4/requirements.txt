@@ -1,0 +1,9 @@
+streamlit
+langchain
+langchain-google-genai
+chromadb
+PyPDF2
+tiktoken
+python-dotenv
+sentence-transformers
+google-generativeai
