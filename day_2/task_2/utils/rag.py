@@ -44,6 +44,8 @@ class PolicyAssistant:
     
     def search(self, query, k=3):
         """Find relevant policy sections"""
+        if self.index is None or not self.sections:
+            raise ValueError("No policy loaded. Please upload and load a policy document first.")
         query_embedding = self.embedding_model.encode([query])
         distances, indices = self.index.search(query_embedding.astype('float32'), k)
         

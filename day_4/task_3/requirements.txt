@@ -6,3 +6,4 @@ requests
 fpdf
 pymongo
 python-dotenv
+langchain-google-genai

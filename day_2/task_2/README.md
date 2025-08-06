@@ -68,11 +68,20 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 pip install -r requirements.txt
 4. Add API Key
-Create a .env file:
 
-env
-
+**Option A: Manual Setup**
+Create a `.env` file in the project root:
+```
 GOOGLE_API_KEY=your_gemini_api_key
+```
+
+**Option B: Automated Setup**
+Run the setup script:
+```bash
+python setup_env.py
+```
+
+**Get your API key from:** https://makersuite.google.com/app/apikey
 ✅ Running the App
 
 streamlit run app.py

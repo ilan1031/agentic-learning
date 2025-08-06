@@ -40,9 +40,10 @@ Build an AI-powered tool that summarizes legal cases in a structured, context-aw
 
 ```bash
 pip install -U google-generativeai tiktoken
+
 ---
 
-
+---
 # 📁 Day 2 - Task 2: HR Policy AI Chatbot (PDF-based)
 
 This task implements an AI-powered HR chatbot using **Google Gemini 1.5 Flash**, capable of answering queries based only on uploaded **PDF HR documents**. It uses **FAISS** for vector retrieval and a **Streamlit UI**.
@@ -83,3 +84,44 @@ This task implements an AI-powered HR chatbot using **Google Gemini 1.5 Flash**,
 ---
 
 
+
+
+---
+
+## 📘 Day 4 / Task 3: ReAct Agent – Book Summary Generator
+
+### 🧠 What It Does
+
+This AI agent takes a **book title** and creates a structured summary by:
+
+* Generating **smart questions** about the plot, themes, and characters
+* **Scraping free online sources** (Wikipedia, SparkNotes, Goodreads)
+* Using **Gemini 1.5 Flash** to process the content
+* Writing a final **Markdown report** with key insights
+
+---
+
+### 🔧 Tech Stack
+
+* **Gemini 1.5 Flash** (via API key)
+* **Python** with ReAct agent pattern
+* **BeautifulSoup** for web scraping
+* **MongoDB Atlas** for session/token storage
+* **.env** file for API keys and DB URI
+
+---
+
+### 📦 Output
+
+* A clean, structured **Markdown summary**
+* Includes: Plot, Themes, Character Analysis, Q\&A
+* All session data and token count saved to MongoDB
+
+---
+
+### 📂 Folder: `day_4/task_3/src/`
+
+Add all Python source files and configs inside this folder.
+Secrets like your Gemini API key and MongoDB URI go in `.env`.
+
+---

@@ -1,5 +1,7 @@
 import streamlit as st
 import os
+from dotenv import load_dotenv
+load_dotenv()
 from utils.rag import PolicyAssistant
 from utils.loader import load_document
 import time

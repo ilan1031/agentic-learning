@@ -136,6 +136,8 @@ celerybeat.pid
 
 # Environments
 .env
+day_2/task_2/.env
+day_4/task_3/.env
 .envrc
 .venv
 env/

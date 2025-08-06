@@ -132,7 +132,8 @@ MIT License. See `LICENSE` for details.
 
 ## 👨‍⚖️ Author
 
-Developed by \ Ilanthalir S
+Developed by \ilanthalir S
 For legal research, automation, and summarization tasks.
 
 ---
+
