@@ -124,3 +124,59 @@ Add all Python source files and configs inside this folder.
 Secrets like your Gemini API key and MongoDB URI go in `.env`.
 
 ---
+
+
+---
+
+## 📘 Day 5 – Task 4: LangChain Literature Review Compiler
+
+A smart AI agent that **automatically summarizes academic research papers** using PDF input. Designed for students, researchers, and consultants to **compile literature reviews** with minimal effort.
+
+---
+
+### 🔍 What It Does
+
+* 📂 Upload one or more PDF research papers.
+* 🧠 Extracts key points using **Google Gemini** + **LangChain**.
+* 🧾 Produces a **clean summary** with:
+
+  * Background
+  * Methods
+  * Key Findings
+  * Citations
+* 📝 Saves everything in `output/final_summary.md`.
+
+---
+
+### 🛠️ Tech Stack
+
+* **LangChain** + **ReAct** Agent pattern
+* **ChromaDB** (for local vector memory)
+* **Google Gemini Pro API**
+* **Streamlit** UI (`main.py`)
+* `.env` for secret key config
+* Fully local processing (no cloud storage)
+
+---
+
+### 🚀 How to Run
+
+```bash
+# 1. Install dependencies
+pip install -r requirements.txt
+
+# 2. Set your Gemini API key in .env
+echo "GEMINI_API_KEY=your_key" > .env
+
+# 3. Launch the UI
+streamlit run main.py
+```
+
+---
+
+### 🙋 Who Is This For?
+
+* Students doing thesis or review writing
+* Researchers handling multiple papers
+* Non-tech users who want AI help with studies
+
