@@ -25,7 +25,7 @@ if uploaded_file:
         summary = generate_summary(chunks, session_token)
 
     output_path = os.path.join("output", "final_summary.md")
-    with open(output_path, "w") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         f.write(summary)
 
     st.markdown("### ✅ Summary:")
