@@ -124,7 +124,6 @@ Add all Python source files and configs inside this folder.
 Secrets like your Gemini API key and MongoDB URI go in `.env`.
 
 ---
-```
 
 
 ---
