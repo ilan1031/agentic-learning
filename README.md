@@ -43,7 +43,7 @@ pip install -U google-generativeai tiktoken
 ```
 
 ---
-# 📁 Day 2 - Task 2: HR Policy AI Chatbot (PDF-based)
+# 📁 Day 2 & 3 - Task 2: HR Policy AI Chatbot (PDF-based)
 
 This task implements an AI-powered HR chatbot using **Google Gemini 1.5 Flash**, capable of answering queries based only on uploaded **PDF HR documents**. It uses **FAISS** for vector retrieval and a **Streamlit UI**.
 
@@ -83,7 +83,7 @@ This task implements an AI-powered HR chatbot using **Google Gemini 1.5 Flash**,
 ---
 
 
-
+```
 ```
 ---
 
@@ -124,7 +124,7 @@ Add all Python source files and configs inside this folder.
 Secrets like your Gemini API key and MongoDB URI go in `.env`.
 
 ---
-
+```
 
 ---
 
