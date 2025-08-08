@@ -40,7 +40,7 @@ Build an AI-powered tool that summarizes legal cases in a structured, context-aw
 
 ```bash
 pip install -U google-generativeai tiktoken
-...
+```
 
 ---
 # 📁 Day 2 - Task 2: HR Policy AI Chatbot (PDF-based)
@@ -84,7 +84,7 @@ This task implements an AI-powered HR chatbot using **Google Gemini 1.5 Flash**,
 
 
 
-
+```
 ---
 
 ## 📘 Day 4 / Task 3: ReAct Agent – Book Summary Generator
@@ -124,6 +124,7 @@ Add all Python source files and configs inside this folder.
 Secrets like your Gemini API key and MongoDB URI go in `.env`.
 
 ---
+```
 
 
 ---
@@ -179,4 +180,32 @@ streamlit run main.py
 * Students doing thesis or review writing
 * Researchers handling multiple papers
 * Non-tech users who want AI help with studies
+
+
+
+---
+
+# 📄 Day 6 – Task 5: AI Session Agent
+
+## 🧠 What This Agent Is
+
+An AI-powered session-based assistant that helps you brainstorm, process, and organize ideas interactively. It keeps track of your conversation history, generates structured markdown outputs, and saves each session for later use.
+
+## 🎯 What It’s Used For
+
+* Capturing and organizing brainstorming sessions.
+* Turning free-flowing chats into clean, well-structured markdown notes.
+* Keeping context across multiple prompts without losing important details.
+
+## ⚙️ How It Works
+
+1. **Session Management** – `session_handler.py` creates and tracks session history.
+2. **Input Processing** – The agent receives your prompts and enriches them with AI-generated insights.
+3. **Markdown Output** – `markdown_writer.py` formats results into readable markdown.
+4. **Data Storage** – Sessions are saved in `/sessions/` as JSON; markdown exports go to `/output/`.
+5. **Utility Tools** – `utils.py` handles token counting, cleaning text, and performance checks.
+
+---
+
+
 
