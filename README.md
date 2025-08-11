@@ -206,5 +206,47 @@ An AI-powered session-based assistant that helps you brainstorm, process, and or
 
 ---
 
+# 📄 Day 8 – Task 7: Academic Literature Review Generator
+ 
 
+AI-powered agent that searches academic sources, filters for credibility, and generates structured literature reviews.
 
+## Features
+
+- Topic-based academic research
+- Credibility filtering for peer-reviewed sources
+- Structured Markdown reports with citations
+- Customizable research parameters
+- Downloadable reports
+
+## Tech Stack
+
+- **LangGraph** - Agent orchestration
+- **Gemini 1.5 Flash** - Report generation
+- **Streamlit** - User interface
+- **Tavily API** - Academic search
+
+## Setup
+
+1. Create `.env` file with API keys:
+```env
+GOOGLE_API_KEY=your_google_api_key
+TAVILY_API_KEY=your_tavily_api_key
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the application:
+```bash
+streamlit run streamlit_app.py
+```
+
+## Usage
+
+1. Enter research topic
+2. Adjust parameters (citation style, depth, sources)
+3. Click "Generate Literature Review"
+4. Review and download the generated report

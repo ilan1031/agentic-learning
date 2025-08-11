@@ -1,4 +1,4 @@
-from langchain.chat_models import ChatGoogleGenerativeAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.prompts import PromptTemplate
 from tools.prompts import SUMMARY_PROMPT
 import os

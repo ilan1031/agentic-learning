@@ -1,41 +1,28 @@
-# 📚 AI Assistant with LangChain (Day 5, Task 4)
+# 📚 AI Assistant with LangChain (Day 6, Task 5)
 
-This project builds a full-featured LangChain AI agent integrated with:
+This project builds a LangChain AI agent for content idea generation with:
 
 - 🔍 Web search (SerpAPI)
-- ➕ Custom calculator tool
-- 💾 Session history save/load
-- 📄 Markdown export
+- 🎯 Niche filter tool (scores ideas by relevance)
+- 💾 Vector store (Chroma) to save and retrieve ideas
+- 📄 Markdown export with relevance scores
 - 🌐 UI via Streamlit
 
-## 💡 Features
-- Modular agent using LangChain tools
-- Tools in `/tools/`, loaded dynamically
-- Saved sessions in `/sessions/`
-- Markdown logs in `/output/`
+## Expected Deliverables
+- Content ideas in markdown format with relevance scores
+- Query responses with implementation details
 
-## 🧠 Agent Criteria
-| Criteria                     | Description                                                                 | Marks |
-|-----------------------------|-----------------------------------------------------------------------------|-------|
-| Git Structure               | Modular, project-ready layout                                               | 2     |
-| LangChain Framework         | Correct and effective LangChain usage                                      | 1     |
-| Web Search Tool             | Integrated and working web search tool                                     | 1     |
-| Custom Tool                 | Built-in custom calculator                                                 | 1     |
-| Vector Store                | N/A (not used here)                                                        | 0     |
-| Agent Workflow              | Complete agent interaction with tools and Streamlit                        | 3     |
-| Output Accuracy             | Exported markdown and session history retained accurately                  | 1     |
-| **Total**                   |                                                                             | **9** |
-
-## � Run Instructions
+## Run Instructions
 ```bash
 pip install -r requirements.txt
-streamlit run streamlit_app.py
+# Ensure .env contains SERPAPI_API_KEY and GEMINI_API_KEY or GOOGLE_API_KEY
+streamlit run main.py
 ```
 
-## � Environment
+## Environment
 Create a `.env` file with:
 ```
-GEMINI_API_KEY=your_key_here
+GEMINI_API_KEY=your_key_here  # or GOOGLE_API_KEY
 SERPAPI_API_KEY=your_serpapi_key
 ```
 
