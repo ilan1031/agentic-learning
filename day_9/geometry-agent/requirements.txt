@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+flask
+requests
+streamlit
+langchain
+langgraph
+google-generativeai
+python-dotenv
+tavily-python
