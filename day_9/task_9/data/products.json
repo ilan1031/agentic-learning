@@ -1,0 +1,71 @@
+[
+  {
+    "id": "p1",
+    "name": "iPhone 15 Pro",
+    "category": "Smartphones",
+    "price": 999,
+    "specs": {
+      "display": "6.1-inch Super Retina XDR",
+      "processor": "A17 Pro",
+      "camera": "48MP Main + 12MP Ultra Wide + 12MP Telephoto",
+      "storage": "128GB/256GB/512GB/1TB",
+      "battery": "Up to 23 hours video playback"
+    },
+    "description": "The latest flagship smartphone from Apple with advanced camera system and powerful A17 Pro chip."
+  },
+  {
+    "id": "p2",
+    "name": "Samsung Galaxy S24",
+    "category": "Smartphones",
+    "price": 799,
+    "specs": {
+      "display": "6.2-inch Dynamic AMOLED",
+      "processor": "Snapdragon 8 Gen 3",
+      "camera": "50MP Main + 12MP Ultra Wide + 10MP Telephoto",
+      "storage": "128GB/256GB",
+      "battery": "Up to 26 hours video playback"
+    },
+    "description": "Samsung's flagship with AI-powered features and impressive camera capabilities."
+  },
+  {
+    "id": "p3",
+    "name": "MacBook Air M2",
+    "category": "Laptops",
+    "price": 1099,
+    "specs": {
+      "display": "13.6-inch Liquid Retina",
+      "processor": "Apple M2 chip",
+      "memory": "8GB/16GB unified memory",
+      "storage": "256GB/512GB/1TB/2TB SSD",
+      "battery": "Up to 18 hours"
+    },
+    "description": "Ultra-portable laptop with powerful M2 chip and all-day battery life."
+  },
+  {
+    "id": "p4",
+    "name": "Dell XPS 15",
+    "category": "Laptops",
+    "price": 1499,
+    "specs": {
+      "display": "15.6-inch OLED",
+      "processor": "Intel Core i7-13700H",
+      "memory": "16GB DDR5",
+      "storage": "512GB SSD",
+      "battery": "Up to 10 hours"
+    },
+    "description": "Powerful creative workstation with stunning OLED display."
+  },
+  {
+    "id": "p5",
+    "name": "Sony WH-1000XM5",
+    "category": "Headphones",
+    "price": 349,
+    "specs": {
+      "type": "Over-ear wireless",
+      "battery": "Up to 30 hours",
+      "noiseCancellation": "Industry-leading ANC",
+      "features": "Multi-device pairing, voice assistant support"
+    },
+    "description": "Premium noise-cancelling headphones with exceptional sound quality."
+  }
+]
