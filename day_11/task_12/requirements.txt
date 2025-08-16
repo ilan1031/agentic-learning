@@ -1,0 +1,7 @@
+crewai
+streamlit
+google-generativeai
+python-dotenv
+tavily-python
+pymupdf
+markdown
