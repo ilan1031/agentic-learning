@@ -1,0 +1,8 @@
+streamlit
+autogen
+google-generativeai
+python-dotenv
+sympy
+numpy
+matplotlib
+ag2[openai]

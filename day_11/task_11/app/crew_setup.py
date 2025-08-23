@@ -1,8 +1,10 @@
 from crewai import Agent, Task, Crew
+from crewai_tools import tool
 from langchain_google_genai import ChatGoogleGenerativeAI
 from app.json_validator_tool import JSONValidatorTool
 import os
 import logging
+from typing import Dict
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
@@ -15,8 +17,25 @@ llm = ChatGoogleGenerativeAI(
     google_api_key=os.getenv("GOOGLE_API_KEY")
 )
 
-# Create validator tool
+# Create validator instance
 validator = JSONValidatorTool()
+
+# Create proper CrewAI tool wrapper
+@tool("JSON Validator Tool")
+def validate_json_tool(json_str: str) -> Dict:
+    """
+    Validates JSON syntax and schema. Returns a dictionary with validation results.
+    
+    Args:
+        json_str: The JSON string to validate
+        
+    Returns:
+        Dict with validation results including:
+        - valid: boolean indicating if JSON is valid
+        - errors: list of error objects
+        - message: summary message
+    """
+    return validator.validate_json(json_str)
 
 def create_manager_agent():
     return Agent(
@@ -40,7 +59,7 @@ def create_analyzer_agent():
             "You are a meticulous data analyst specializing in JSON validation. "
             "You have a keen eye for spotting syntax errors and schema mismatches."
         ),
-        tools=[validator.validate_json],
+        tools=[validate_json_tool],  # Use the tool wrapper
         verbose=True,
         llm=llm
     )
@@ -65,7 +84,7 @@ def create_analysis_task(agent, json_str: str):
             "A detailed error report in JSON format containing:\n"
             "- Error type (syntax/schema)\n"
             "- Location/path in JSON\n"
-            "- Error description\n"  # Fixed line
+            "- Error description\n"
             "- Suggested fix\n"
             "Format: List of error objects"
         ),
